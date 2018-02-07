@@ -1,4 +1,4 @@
-package fr.scholanova.group.java.tools.convertor;
+package fr.scholanova.group.java.tools.convertors;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.core.convert.support.DefaultConversionService;

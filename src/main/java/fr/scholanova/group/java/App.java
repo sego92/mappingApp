@@ -9,7 +9,7 @@ import org.springframework.core.convert.support.DefaultConversionService;
 import org.springframework.core.convert.support.GenericConversionService;
 
 import fr.scholanova.group.java.entities.User;
-import fr.scholanova.group.java.tools.convertor.StringToUserConverter;
+import fr.scholanova.group.java.tools.convertors.StringToUserConverter;
 
 public class App 
 {
