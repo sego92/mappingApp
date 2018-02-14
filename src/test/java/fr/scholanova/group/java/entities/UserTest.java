@@ -9,7 +9,7 @@ public class UserTest {
 	@Test
 	public void testId() {
 		User user = new User();
-		ReflectionTestUtils.setField(user, "id", new Integer(10));
-		assertEquals(new Integer(10), user.getId());
+		ReflectionTestUtils.setField(user, "id", (10));
+		assertEquals(Integer.valueOf(10), user.getId());
 	}
 }
