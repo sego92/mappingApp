@@ -1,3 +1,4 @@
 fr\scholanova\group\java\App.class
 fr\scholanova\group\java\entities\User.class
-fr\scholanova\group\java\tools\convertor\StringToUserConverter.class
+fr\scholanova\group\java\tools\aspects\AspectExample.class
+fr\scholanova\group\java\tools\convertors\StringToUserConverter.class
