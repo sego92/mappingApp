@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-  <property name="DEV_HOME" value="D:\spring_workplace\logs" />
+  <property name="DEV_HOME" value="C:\Users\Dixi\Documents\2 - Cours\Groupe_Java\logs" />
 
   <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
     <layout class="ch.qos.logback.classic.PatternLayout">
@@ -59,8 +59,8 @@
     <appender-ref ref="STDOUT" />
   </logger>
 
-  <root level="error">
-    <appender-ref ref="FILE-ERROR" />
-  </root>
+<!--   <root level="error"> -->
+<!--     <appender-ref ref="FILE-ERROR" /> -->
+<!--   </root> -->
 
 </configuration>

@@ -9,12 +9,11 @@ import javax.persistence.MappedSuperclass;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
 @Setter
+@Getter
 @MappedSuperclass
-public abstract class AbstractEntity implements Serializable{
+public abstract class AbstractEntity implements Serializable {
 	@Id
 	@GeneratedValue
 	private Integer id;
-
 }
