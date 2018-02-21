@@ -7,8 +7,11 @@ import java.util.Date;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import fr.scholanova.group.java.entities.Address;
 import fr.scholanova.group.java.entities.User;
 import fr.scholanova.group.java.enums.GenderEnum;
+import fr.scholanova.group.java.services.AddressService;
+import fr.scholanova.group.java.services.BookService;
 import fr.scholanova.group.java.services.UserService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,9 +23,14 @@ public class App
 
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
 
-		UserService userService = (UserService)ctx.getBean("userService");
+		AddressService addressService = (AddressService) ctx.getBean(AddressService.class);
+		log.debug("addressService", addressService);
 		
+		UserService userService = (UserService)ctx.getBean("userService");
 		log.debug("userService", userService);
+		
+		BookService bookService = (BookService) ctx.getBean(BookService.class);
+		log.debug("bookService", bookService);
 
 		Calendar cal = Calendar.getInstance();
 		

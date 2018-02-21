@@ -2,6 +2,8 @@ fr\scholanova\group\java\entities\User.class
 fr\scholanova\group\java\services\UserService.class
 fr\scholanova\group\java\services\UserServiceImpl.class
 fr\scholanova\group\java\App.class
+fr\scholanova\group\java\tools\validators\UserValidator.class
+fr\scholanova\group\java\enums\GenderEnum.class
 fr\scholanova\group\java\tools\convertors\StringToUserConverter.class
 fr\scholanova\group\java\entities\Address.class
 fr\scholanova\group\java\dao\UserDaoImpl.class
