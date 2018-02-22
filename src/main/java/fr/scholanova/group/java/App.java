@@ -13,6 +13,7 @@ import fr.scholanova.group.java.enums.GenderEnum;
 import fr.scholanova.group.java.services.AddressService;
 import fr.scholanova.group.java.services.BookService;
 import fr.scholanova.group.java.services.UserService;
+import fr.scholanova.group.java.services.VehiculeService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -22,15 +23,18 @@ public class App
 	{
 
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("Spring/applicationContext.xml");
-
-		AddressService addressService = (AddressService) ctx.getBean(AddressService.class);
-		log.debug("addressService", addressService);
 		
 		UserService userService = (UserService)ctx.getBean("userService");
 		log.debug("userService", userService);
 		
+		AddressService addressService = (AddressService) ctx.getBean(AddressService.class);
+		log.debug("addressService", addressService);
+		
 		BookService bookService = (BookService) ctx.getBean(BookService.class);
 		log.debug("bookService", bookService);
+		
+		VehiculeService vehiculeService = (VehiculeService) ctx.getBean(VehiculeService.class);
+		log.debug("vehiculeService", vehiculeService);
 
 		Calendar cal = Calendar.getInstance();
 		
